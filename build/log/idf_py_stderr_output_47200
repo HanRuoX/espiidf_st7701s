@@ -1,0 +1,8 @@
+CMake Warning at /Users/shangxin/esp/esp-idf/tools/cmake/project.cmake:443 (message):
+  enabled ccache in build but ccache program not found
+Call Stack (most recent call first):
+  CMakeLists.txt:8 (project)
+
+
+Compiler supported targets: xtensa-esp32s3-elf
+

@@ -1,0 +1,261 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build/bootloader/esp-idf/esptool_py && /Users/shangxin/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/shangxin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/Users/shangxin/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.2-dirty\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build/config -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/include -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/lcd_st7701 -I/Users/shangxin/esp/esp-idf/components/newlib/platform_include -I/Users/shangxin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/shangxin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/shangxin/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/shangxin/esp/esp-idf/components/freertos/esp_additions/include -I/Users/shangxin/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/Users/shangxin/esp/esp-idf/components/esp_hw_support/include -I/Users/shangxin/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/shangxin/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/shangxin/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/shangxin/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/shangxin/esp/esp-idf/components/heap/include -I/Users/shangxin/esp/esp-idf/components/log/include -I/Users/shangxin/esp/esp-idf/components/soc/include -I/Users/shangxin/esp/esp-idf/components/soc/esp32s3 -I/Users/shangxin/esp/esp-idf/components/soc/esp32s3/include -I/Users/shangxin/esp/esp-idf/components/hal/esp32s3/include -I/Users/shangxin/esp/esp-idf/components/hal/include -I/Users/shangxin/esp/esp-idf/components/hal/platform_port/include -I/Users/shangxin/esp/esp-idf/components/esp_rom/include -I/Users/shangxin/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/shangxin/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/shangxin/esp/esp-idf/components/esp_common/include -I/Users/shangxin/esp/esp-idf/components/esp_system/include -I/Users/shangxin/esp/esp-idf/components/esp_system/port/soc -I/Users/shangxin/esp/esp-idf/components/esp_system/port/include/private -I/Users/shangxin/esp/esp-idf/components/xtensa/include -I/Users/shangxin/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/shangxin/esp/esp-idf/components/lwip/include -I/Users/shangxin/esp/esp-idf/components/lwip/include/apps -I/Users/shangxin/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/shangxin/esp/esp-idf/components/lwip/lwip/src/include -I/Users/shangxin/esp/esp-idf/components/lwip/port/include -I/Users/shangxin/esp/esp-idf/components/lwip/port/freertos/include -I/Users/shangxin/esp/esp-idf/components/lwip/port/esp32xx/include -I/Users/shangxin/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/espressif__esp_lcd_panel_io_additions/include -I/Users/shangxin/esp/esp-idf/components/esp_lcd/include -I/Users/shangxin/esp/esp-idf/components/esp_lcd/interface -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/espressif__esp_io_expander/include -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/espressif__esp_lcd_st7701/include -I/Users/shangxin/esp/esp-idf/components/driver/include -I/Users/shangxin/esp/esp-idf/components/driver/deprecated -I/Users/shangxin/esp/esp-idf/components/driver/analog_comparator/include -I/Users/shangxin/esp/esp-idf/components/driver/dac/include -I/Users/shangxin/esp/esp-idf/components/driver/gpio/include -I/Users/shangxin/esp/esp-idf/components/driver/gptimer/include -I/Users/shangxin/esp/esp-idf/components/driver/i2c/include -I/Users/shangxin/esp/esp-idf/components/driver/i2s/include -I/Users/shangxin/esp/esp-idf/components/driver/ledc/include -I/Users/shangxin/esp/esp-idf/components/driver/mcpwm/include -I/Users/shangxin/esp/esp-idf/components/driver/parlio/include -I/Users/shangxin/esp/esp-idf/components/driver/pcnt/include -I/Users/shangxin/esp/esp-idf/components/driver/rmt/include -I/Users/shangxin/esp/esp-idf/components/driver/sdio_slave/include -I/Users/shangxin/esp/esp-idf/components/driver/sdmmc/include -I/Users/shangxin/esp/esp-idf/components/driver/sigma_delta/include -I/Users/shangxin/esp/esp-idf/components/driver/spi/include -I/Users/shangxin/esp/esp-idf/components/driver/temperature_sensor/include -I/Users/shangxin/esp/esp-idf/components/driver/touch_sensor/include -I/Users/shangxin/esp/esp-idf/components/driver/twai/include -I/Users/shangxin/esp/esp-idf/components/driver/uart/include -I/Users/shangxin/esp/esp-idf/components/driver/usb_serial_jtag/include -I/Users/shangxin/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/Users/shangxin/esp/esp-idf/components/esp_pm/include -I/Users/shangxin/esp/esp-idf/components/esp_ringbuf/include -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/espressif__esp_lcd_touch_gt911/include -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/espressif__esp_lcd_touch/include -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/lvgl__lvgl -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/lvgl__lvgl/src -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/lvgl__lvgl/examples -I/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/managed_components/lvgl__lvgl/demos -I/Users/shangxin/esp/esp-idf/components/esp_timer/include -I/Users/shangxin/esp/esp-idf/components/efuse/include -I/Users/shangxin/esp/esp-idf/components/efuse/esp32s3/include -I/Users/shangxin/esp/esp-idf/components/mbedtls/port/include -I/Users/shangxin/esp/esp-idf/components/mbedtls/mbedtls/include -I/Users/shangxin/esp/esp-idf/components/mbedtls/mbedtls/library -I/Users/shangxin/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/Users/shangxin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/Users/shangxin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/Users/shangxin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/Users/shangxin/esp/esp-idf/components/esp_app_format/include -I/Users/shangxin/esp/esp-idf/components/bootloader_support/include -I/Users/shangxin/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/Users/shangxin/esp/esp-idf/components/esp_partition/include -I/Users/shangxin/esp/esp-idf/components/app_update/include -I/Users/shangxin/esp/esp-idf/components/esp_mm/include -I/Users/shangxin/esp/esp-idf/components/spi_flash/include -I/Users/shangxin/esp/esp-idf/components/pthread/include -I/Users/shangxin/esp/esp-idf/components/app_trace/include -I/Users/shangxin/esp/esp-idf/components/esp_event/include -I/Users/shangxin/esp/esp-idf/components/nvs_flash/include -I/Users/shangxin/esp/esp-idf/components/esp_phy/include -I/Users/shangxin/esp/esp-idf/components/esp_phy/esp32s3/include -I/Users/shangxin/esp/esp-idf/components/vfs/include -I/Users/shangxin/esp/esp-idf/components/esp_netif/include -I/Users/shangxin/esp/esp-idf/components/wpa_supplicant/include -I/Users/shangxin/esp/esp-idf/components/wpa_supplicant/port/include -I/Users/shangxin/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/Users/shangxin/esp/esp-idf/components/esp_coex/include -I/Users/shangxin/esp/esp-idf/components/esp_wifi/include -I/Users/shangxin/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/Users/shangxin/esp/esp-idf/components/unity/include -I/Users/shangxin/esp/esp-idf/components/unity/unity/src -I/Users/shangxin/esp/esp-idf/components/cmock/CMock/src -I/Users/shangxin/esp/esp-idf/components/console -I/Users/shangxin/esp/esp-idf/components/http_parser -I/Users/shangxin/esp/esp-idf/components/esp-tls -I/Users/shangxin/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/Users/shangxin/esp/esp-idf/components/esp_adc/include -I/Users/shangxin/esp/esp-idf/components/esp_adc/interface -I/Users/shangxin/esp/esp-idf/components/esp_adc/esp32s3/include -I/Users/shangxin/esp/esp-idf/components/esp_adc/deprecated/include -I/Users/shangxin/esp/esp-idf/components/esp_eth/include -I/Users/shangxin/esp/esp-idf/components/esp_gdbstub/include -I/Users/shangxin/esp/esp-idf/components/esp_hid/include -I/Users/shangxin/esp/esp-idf/components/tcp_transport/include -I/Users/shangxin/esp/esp-idf/components/esp_http_client/include -I/Users/shangxin/esp/esp-idf/components/esp_http_server/include -I/Users/shangxin/esp/esp-idf/components/esp_https_ota/include -I/Users/shangxin/esp/esp-idf/components/esp_psram/include -I/Users/shangxin/esp/esp-idf/components/protobuf-c/protobuf-c -I/Users/shangxin/esp/esp-idf/components/protocomm/include/common -I/Users/shangxin/esp/esp-idf/components/protocomm/include/security -I/Users/shangxin/esp/esp-idf/components/protocomm/include/transports -I/Users/shangxin/esp/esp-idf/components/esp_local_ctrl/include -I/Users/shangxin/esp/esp-idf/components/espcoredump/include -I/Users/shangxin/esp/esp-idf/components/espcoredump/include/port/xtensa -I/Users/shangxin/esp/esp-idf/components/wear_levelling/include -I/Users/shangxin/esp/esp-idf/components/sdmmc/include -I/Users/shangxin/esp/esp-idf/components/fatfs/diskio -I/Users/shangxin/esp/esp-idf/components/fatfs/vfs -I/Users/shangxin/esp/esp-idf/components/fatfs/src -I/Users/shangxin/esp/esp-idf/components/idf_test/include -I/Users/shangxin/esp/esp-idf/components/idf_test/include/esp32s3 -I/Users/shangxin/esp/esp-idf/components/ieee802154/include -I/Users/shangxin/esp/esp-idf/components/json/cJSON -I/Users/shangxin/esp/esp-idf/components/mqtt/esp-mqtt/include -I/Users/shangxin/esp/esp-idf/components/perfmon/include -I/Users/shangxin/esp/esp-idf/components/spiffs/include -I/Users/shangxin/esp/esp-idf/components/touch_element/include -I/Users/shangxin/esp/esp-idf/components/ulp/ulp_common/include -I/Users/shangxin/esp/esp-idf/components/ulp/ulp_common/include/esp32s3 -I/Users/shangxin/esp/esp-idf/components/usb/include -I/Users/shangxin/esp/esp-idf/components/wifi_provisioning/include -mlongcalls  -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -O2 -fmacro-prefix-map=/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s=. -fmacro-prefix-map=/Users/shangxin/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -DESP_LCD_PANEL_IO_ADDITIONS_VER_MAJOR=1 -DESP_LCD_PANEL_IO_ADDITIONS_VER_MINOR=0 -DESP_LCD_PANEL_IO_ADDITIONS_VER_PATCH=1 -DESP_LCD_ST7701_VER_MAJOR=1 -DESP_LCD_ST7701_VER_MINOR=1 -DESP_LCD_ST7701_VER_PATCH=0 -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c: In function 'app_lvgl_init':
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:189:11: error: unknown type name 'lvgl_port_cfg_t'
+  189 |     const lvgl_port_cfg_t lvgl_cfg = {
+      |           ^~~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:190:9: error: field name not in record or union initializer
+  190 |         .task_priority = 4,         /* LVGL task priority */
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:190:9: note: (near initialization for 'lvgl_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:191:9: error: field name not in record or union initializer
+  191 |         .task_stack = 6144,         /* LVGL task stack size */
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:191:9: note: (near initialization for 'lvgl_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:191:23: warning: excess elements in scalar initializer
+  191 |         .task_stack = 6144,         /* LVGL task stack size */
+      |                       ^~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:191:23: note: (near initialization for 'lvgl_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:192:9: error: field name not in record or union initializer
+  192 |         .task_affinity = -1,        /* LVGL task pinned to core (-1 is no affinity) */
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:192:9: note: (near initialization for 'lvgl_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:192:26: warning: excess elements in scalar initializer
+  192 |         .task_affinity = -1,        /* LVGL task pinned to core (-1 is no affinity) */
+      |                          ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:192:26: note: (near initialization for 'lvgl_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:193:9: error: field name not in record or union initializer
+  193 |         .task_max_sleep_ms = 500,   /* Maximum sleep in LVGL task */
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:193:9: note: (near initialization for 'lvgl_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:193:30: warning: excess elements in scalar initializer
+  193 |         .task_max_sleep_ms = 500,   /* Maximum sleep in LVGL task */
+      |                              ^~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:193:30: note: (near initialization for 'lvgl_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:194:9: error: field name not in record or union initializer
+  194 |         .timer_period_ms = 5        /* LVGL timer tick period in ms */
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:194:9: note: (near initialization for 'lvgl_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:194:28: warning: excess elements in scalar initializer
+  194 |         .timer_period_ms = 5        /* LVGL timer tick period in ms */
+      |                            ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:194:28: note: (near initialization for 'lvgl_cfg')
+In file included from /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:11:
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:196:25: error: implicit declaration of function 'lvgl_port_init'; did you mean 'lv_rb_init'? [-Werror=implicit-function-declaration]
+  196 |     ESP_RETURN_ON_ERROR(lvgl_port_init(&lvgl_cfg), TAG, "LVGL port initialization failed");
+      |                         ^~~~~~~~~~~~~~
+/Users/shangxin/esp/esp-idf/components/esp_common/include/esp_check.h:215:30: note: in definition of macro 'ESP_RETURN_ON_ERROR'
+  215 |         esp_err_t err_rc_ = (x);                                                                \
+      |                              ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:205:11: error: unknown type name 'lvgl_port_display_cfg_t'
+  205 |     const lvgl_port_display_cfg_t disp_cfg = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:206:9: error: field name not in record or union initializer
+  206 |         .panel_handle = panel_handle,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:206:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:206:25: warning: initialization of 'int' from 'esp_lcd_panel_handle_t' {aka 'struct esp_lcd_panel_t *'} makes integer from pointer without a cast [-Wint-conversion]
+  206 |         .panel_handle = panel_handle,
+      |                         ^~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:206:25: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:207:9: error: field name not in record or union initializer
+  207 |         .buffer_size = buff_size,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:207:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:207:24: warning: excess elements in scalar initializer
+  207 |         .buffer_size = buff_size,
+      |                        ^~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:207:24: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:208:9: error: field name not in record or union initializer
+  208 |         .double_buffer = 1,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:208:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:208:26: warning: excess elements in scalar initializer
+  208 |         .double_buffer = 1,
+      |                          ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:208:26: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:209:9: error: field name not in record or union initializer
+  209 |         .hres = LCD_WIDTH,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:209:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:37:25: warning: excess elements in scalar initializer
+   37 | #define LCD_WIDTH       (480)
+      |                         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:209:17: note: in expansion of macro 'LCD_WIDTH'
+  209 |         .hres = LCD_WIDTH,
+      |                 ^~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:37:25: note: (near initialization for 'disp_cfg')
+   37 | #define LCD_WIDTH       (480)
+      |                         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:209:17: note: in expansion of macro 'LCD_WIDTH'
+  209 |         .hres = LCD_WIDTH,
+      |                 ^~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:210:9: error: field name not in record or union initializer
+  210 |         .vres = LCD_HEIGHT,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:210:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:38:25: warning: excess elements in scalar initializer
+   38 | #define LCD_HEIGHT      (480)
+      |                         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:210:17: note: in expansion of macro 'LCD_HEIGHT'
+  210 |         .vres = LCD_HEIGHT,
+      |                 ^~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:38:25: note: (near initialization for 'disp_cfg')
+   38 | #define LCD_HEIGHT      (480)
+      |                         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:210:17: note: in expansion of macro 'LCD_HEIGHT'
+  210 |         .vres = LCD_HEIGHT,
+      |                 ^~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:211:9: error: field name not in record or union initializer
+  211 |         .monochrome = false,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:211:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:211:23: warning: excess elements in scalar initializer
+  211 |         .monochrome = false,
+      |                       ^~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:211:23: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:212:9: error: field name not in record or union initializer
+  212 |         .color_format = LV_COLOR_FORMAT_RGB565,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:212:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:212:25: warning: excess elements in scalar initializer
+  212 |         .color_format = LV_COLOR_FORMAT_RGB565,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:212:25: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:214:9: error: field name not in record or union initializer
+  214 |         .rotation = {
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:214:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:214:9: warning: braces around scalar initializer
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:214:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:215:13: error: field name not in record or union initializer
+  215 |             .swap_xy = false,
+      |             ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:215:13: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:216:13: error: field name not in record or union initializer
+  216 |             .mirror_x = false,
+      |             ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:216:13: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:216:25: warning: excess elements in scalar initializer
+  216 |             .mirror_x = false,
+      |                         ^~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:216:25: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:217:13: error: field name not in record or union initializer
+  217 |             .mirror_y = false,
+      |             ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:217:13: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:217:25: warning: excess elements in scalar initializer
+  217 |             .mirror_y = false,
+      |                         ^~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:217:25: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:214:21: warning: excess elements in scalar initializer
+  214 |         .rotation = {
+      |                     ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:214:21: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:219:9: error: field name not in record or union initializer
+  219 |         .flags = {
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:219:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:219:9: warning: braces around scalar initializer
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:219:9: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:220:13: error: field name not in record or union initializer
+  220 |             .buff_dma = false,
+      |             ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:220:13: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:221:13: error: field name not in record or union initializer
+  221 |             .buff_spiram = false,
+      |             ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:221:13: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:221:28: warning: excess elements in scalar initializer
+  221 |             .buff_spiram = false,
+      |                            ^~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:221:28: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:228:13: error: field name not in record or union initializer
+  228 |             .swap_bytes = false,
+      |             ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:228:13: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:228:27: warning: excess elements in scalar initializer
+  228 |             .swap_bytes = false,
+      |                           ^~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:228:27: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:219:18: warning: excess elements in scalar initializer
+  219 |         .flags = {
+      |                  ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:219:18: note: (near initialization for 'disp_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:232:11: error: unknown type name 'lvgl_port_display_rgb_cfg_t'
+  232 |     const lvgl_port_display_rgb_cfg_t rgb_cfg = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:233:9: error: field name not in record or union initializer
+  233 |         .flags = {
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:233:9: note: (near initialization for 'rgb_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:233:9: warning: braces around scalar initializer
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:233:9: note: (near initialization for 'rgb_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:235:13: error: field name not in record or union initializer
+  235 |             .bb_mode = true,
+      |             ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:235:13: note: (near initialization for 'rgb_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:242:13: error: field name not in record or union initializer
+  242 |             .avoid_tearing = false,
+      |             ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:242:13: note: (near initialization for 'rgb_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:242:30: warning: excess elements in scalar initializer
+  242 |             .avoid_tearing = false,
+      |                              ^~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:242:30: note: (near initialization for 'rgb_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:246:17: error: implicit declaration of function 'lvgl_port_add_disp_rgb' [-Werror=implicit-function-declaration]
+  246 |     lvgl_disp = lvgl_port_add_disp_rgb(&disp_cfg, &rgb_cfg);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:246:15: warning: assignment to 'lv_display_t *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  246 |     lvgl_disp = lvgl_port_add_disp_rgb(&disp_cfg, &rgb_cfg);
+      |               ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:248:11: error: unknown type name 'lvgl_port_touch_cfg_t'
+  248 |     const lvgl_port_touch_cfg_t touch_cfg = {
+      |           ^~~~~~~~~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:249:9: error: field name not in record or union initializer
+  249 |         .disp = lvgl_disp,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:249:9: note: (near initialization for 'touch_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:249:17: warning: initialization of 'int' from 'lv_display_t *' makes integer from pointer without a cast [-Wint-conversion]
+  249 |         .disp = lvgl_disp,
+      |                 ^~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:249:17: note: (near initialization for 'touch_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:250:9: error: field name not in record or union initializer
+  250 |         .handle = tp_handle,
+      |         ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:250:9: note: (near initialization for 'touch_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:250:19: warning: excess elements in scalar initializer
+  250 |         .handle = tp_handle,
+      |                   ^~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:250:19: note: (near initialization for 'touch_cfg')
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:252:24: error: implicit declaration of function 'lvgl_port_add_touch' [-Werror=implicit-function-declaration]
+  252 |     lvgl_touch_indev = lvgl_port_add_touch(&touch_cfg);
+      |                        ^~~~~~~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:252:22: warning: assignment to 'lv_indev_t *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  252 |     lvgl_touch_indev = lvgl_port_add_touch(&touch_cfg);
+      |                      ^
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c: In function 'app_main':
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:274:5: error: implicit declaration of function 'lvgl_port_lock' [-Werror=implicit-function-declaration]
+  274 |     lvgl_port_lock(0);
+      |     ^~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:277:5: error: implicit declaration of function 'lvgl_port_unlock' [-Werror=implicit-function-declaration]
+  277 |     lvgl_port_unlock();
+      |     ^~~~~~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c: At top level:
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:80:31: warning: 'touch_handle' defined but not used [-Wunused-variable]
+   80 | static esp_lcd_touch_handle_t touch_handle = NULL;
+      |                               ^~~~~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:79:31: warning: 'lcd_panel' defined but not used [-Wunused-variable]
+   79 | static esp_lcd_panel_handle_t lcd_panel = NULL;
+      |                               ^~~~~~~~~
+/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/main/main.c:78:34: warning: 'lcd_io' defined but not used [-Wunused-variable]
+   78 | static esp_lcd_panel_io_handle_t lcd_io = NULL;
+      |                                  ^~~~~~
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

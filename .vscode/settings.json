@@ -1,0 +1,34 @@
+{
+    "files.associations": {
+        "esp_lcd_touch_tt21100.h": "c",
+        "button.h": "c",
+        "esp_lcd_ili9341.h": "c",
+        "esp_lvgl_port.h": "c",
+        "limits": "c",
+        "ratio": "c",
+        "algorithm": "c",
+        "gpio.h": "c",
+        "uart.h": "c",
+        "stdbool.h": "c",
+        "freertos.h": "c",
+        "*.inc": "c",
+        "task.h": "c",
+        "esp_lcd_panel_vendor.h": "c",
+        "lv_indev.h": "c",
+        "esp_lcd_touch_xpt2046.h": "c",
+        "lvgl_port.h": "c",
+        "spi_master.h": "c",
+        "esp_lcd_panel_io.h": "c",
+        "esp_lcd_st7701.h": "c",
+        "esp_lcd_panel_ops.h": "c",
+        "esp_lcd_touch_gt911.h": "c",
+        "lv_demos.h": "c",
+        "lcd_st7701.h": "c",
+        "nvs_flash.h": "c",
+        "lvgl.h": "c"
+    },
+    "idf.adapterTargetName": "esp32s3",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+}

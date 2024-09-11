@@ -1,0 +1,72 @@
+[1/5] cd /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build/esp-idf/esptool_py && /Users/shangxin/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/shangxin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build/partition_table/partition-table.bin /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build/main.bin
+main.bin binary size 0x117a30 bytes. Smallest app partition is 0x177000 bytes. 0x5f5d0 bytes (25%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build/bootloader/esp-idf/esptool_py && /Users/shangxin/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/shangxin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/shangxin/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -D IDF_PATH=/Users/shangxin/esp/esp-idf -D "SERIAL_TOOL=/Users/shangxin/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/shangxin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/shangxin/esp-project/S3_DEMO_0321/lvgl9_st7701s/build -P /Users/shangxin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbmodem13101 -b 1000000 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 main.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/cu.usbmodem13101
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: dc:da:0c:59:e2:70
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 1000000
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00127fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 20928 bytes to 13296...
+Writing at 0x00000000... (100 %)
+Wrote 20928 bytes (13296 compressed) at 0x00000000 in 0.4 seconds (effective 461.2 kbit/s)...
+Hash of data verified.
+Compressed 1145392 bytes to 515629...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001ae53... (6 %)
+Writing at 0x00023c9f... (9 %)
+Writing at 0x00044909... (12 %)
+Writing at 0x0004bc1c... (15 %)
+Writing at 0x000531fb... (18 %)
+Writing at 0x00062af6... (21 %)
+Writing at 0x000696cd... (25 %)
+Writing at 0x0006febb... (28 %)
+Writing at 0x0007dbe9... (31 %)
+Writing at 0x0008644f... (34 %)
+Writing at 0x0008cd06... (37 %)
+Writing at 0x000936d7... (40 %)
+Writing at 0x000b9906... (43 %)
+Writing at 0x000c74b9... (46 %)
+Writing at 0x000cca98... (50 %)
+Writing at 0x000d239f... (53 %)
+Writing at 0x000d7c4d... (56 %)
+Writing at 0x000dd3db... (59 %)
+Writing at 0x000e23e7... (62 %)
+Writing at 0x000e7339... (65 %)
+Writing at 0x000ed2cc... (68 %)
+Writing at 0x000f2020... (71 %)
+Writing at 0x000f6f3c... (75 %)
+Writing at 0x000fc4ab... (78 %)
+Writing at 0x001014c6... (81 %)
+Writing at 0x0010657c... (84 %)
+Writing at 0x0010bc0a... (87 %)
+Writing at 0x00111671... (90 %)
+Writing at 0x0011786b... (93 %)
+Writing at 0x0011f5df... (96 %)
+Writing at 0x00124e8d... (100 %)
+Wrote 1145392 bytes (515629 compressed) at 0x00010000 in 8.3 seconds (effective 1104.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 464.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
